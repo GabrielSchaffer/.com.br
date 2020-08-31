@@ -1,0 +1,268 @@
+/*-----------------CV_LEFT---------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+.container {
+    display: flex;
+    width: 100%;
+    height: 1130px;
+    background: rgb(39, 39, 39);
+}
+.cv_left {
+    background-color: #00435c;
+    margin-left: 150px;
+}
+/*#foto{
+    border-radius: 50%;
+    border: 3px solid #000;
+    width: 200px;
+    height: 220px;
+    text-align: center;
+    margin-left: 55px; 
+}
+*/
+#nome{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    -webkit-text-stroke-width: .8px; /*borda do contorno*/
+    -webkit-text-stroke-color: #000; /*cor do contorno*/
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.regulare {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -15px;
+}
+
+.resumo_perfil ul li {
+    display: inline-table;
+    margin-left: -25px;
+    margin-bottom: 8px;
+}
+
+.icon {
+    color: #000000;
+    display: table-cell;
+}
+
+.data {
+    margin-top: 5px;
+    font-size: 16px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+/*
+.bold{ 
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    width: auto;
+}
+*/
+
+.bolds {
+    /*traço nome */
+    border-bottom: 1px solid rgb(0, 132, 255);
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00ffc8;
+}
+
+.cv_left ul li {
+    /*retira os pontos dos LI*/
+    list-style: none;
+}
+
+.redesocial {
+    text-align: center;
+}
+
+.redesocial a {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.redesocial a:hover {
+    transform: translateY(5px);
+    transition: 0.5s;
+    background-color: darkgrey;
+}
+
+.resumo_skills ul li img {
+    background-color: white;
+    border-radius: 50%;
+    padding: 3px;
+    margin-top: 2px;
+}
+
+.resumo_skills ul li {
+    margin-left: -35px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_name {
+    width: 40%;
+    padding: 6px;
+}
+
+.skill_progress {
+    width: 90%;
+    margin: 10px;
+    max-height: 6px;
+    background: #000;
+    position: relative;
+    padding: 6px;
+    border-radius: 1px 4px 4px 1px;
+}
+
+.skill_percentual {
+    width: 15%;
+    padding: 6px;
+}
+
+.skill_progress span {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 6px;
+    border-radius: 1px 4px 4px 1px;
+    background: #009fd9;
+}
+
+.PDF {
+    /*posição do button*/
+    text-align: center;
+}
+
+.code img {
+    width: 130px;
+    height: 130px;
+}
+
+.icon {
+    color: #009fd9;
+}
+
+/*-----------------CV_RIGHT---------------*/
+
+.title {
+    font-weight: 700;
+    padding: 20px 0;
+    /*o n° 0 representa a margin*/
+    font-size: 20px;
+}
+
+.about-me, .works, .education {
+    /*divisor*/
+    border-bottom: 3px solid #5f5f5f;
+}
+
+.works ul li {
+    list-style: none;
+}
+
+.sub-title {
+    font-size: 12px;
+    text-align: center;
+    width: 75px;
+    background-color: #009fd9;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 2px 2px 3px 1px #000;
+    height: auto;
+    color: white;
+}
+
+/*-----------------------*/
+
+.title#port {
+    color: #009fd9;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.portfolio {
+    height: 100px;
+    display: flex;
+}
+
+.projeto2 {
+    margin-left: 7%;
+}
+
+.frame {
+    margin-top: -20px;
+    display: inline-flex;
+}
+
+/*--------------------------------------------------*/
+
+@media screen  and (max-width: 530px) {
+    .container{
+        height: 3000px;
+    }
+    .cv_left {
+        width: 100px;
+        margin-left: 1px;
+        height: 100%;    
+    }
+    .container {
+        background-color: #000;
+    }
+    /*#foto {
+        height: 270px;
+        width: 76%;
+        margin-left: 14%;
+        margin-top: 55px;
+        border:4px solid #999;
+    }
+    */
+    #inf {
+        display: none;
+    }
+    .resumo_perfil{
+        text-align: center;
+    }
+    #nome{
+        color:#fff;
+        -webkit-text-stroke-width: 1.5px; /*borda do contorno*/
+        -webkit-text-stroke-color: rgb(0, 0, 0); /*cor do contorno*/
+        font-size: 32px;  
+    }
+    #fig{
+        margin-top: -20px;
+    }
+/*---------------------------------------------------------*/
+.cv_right {
+    margin-top: 1030px;
+    margin-left: -346px;
+    display: block;
+
+}
+.portfolio{
+    margin-left: 2px;
+    display: inline-block;
+}
+.projeto1 img, .projeto2 img, .projeto3 img{
+    width: 320px;
+    height: 180px;
+}
+.projeto2 {
+    margin-left: -3px;
+} 
+.Frameworks{
+    margin-top: 60px;
+    text-align: center;
+}
+
+}
